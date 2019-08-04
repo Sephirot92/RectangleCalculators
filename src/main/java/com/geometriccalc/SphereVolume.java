@@ -30,7 +30,7 @@ public class SphereVolume {
         Scanner radiusScanner = new Scanner(System.in);
         radius = Double.parseDouble(radiusScanner.nextLine());
         System.out.println("The sphere radius is: " + getRadius() + ". Calculating the Sphere volume.");
-        volume = (4/3) * pi * (radius * radius * radius);
+        volume = (4 * pi * radius * radius * radius)/3;
         String volumeOutput = String.format("%.2f", volume);
         System.out.println("So, the sphere volume is: " + volumeOutput);
 
